@@ -17,12 +17,17 @@
   align-items: center;
 }
 
+.task-header {
+  margin: 0 0 100px 0;
+}
+
 .wip {
   background: LightSalmon;
   grid-area: wip;
   height: 100vh;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+
   font-weight: bold;
 }
 
@@ -30,6 +35,7 @@
   background: PaleGreen;
   grid-area: dropped;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+
   font-weight: bold;
 }
