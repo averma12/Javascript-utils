@@ -1,0 +1,35 @@
+.drag-drop-container {
+  display: grid;
+  width: 100%;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    "header header header header"
+    "wip . . dropped"
+    "wip . . dropped"
+    "wip . . dropped";
+}
+.header {
+  background: LightSkyBlue;
+  grid-area: header;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wip {
+  background: LightSalmon;
+  grid-area: wip;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.droppable {
+  background: PaleGreen;
+  grid-area: dropped;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}

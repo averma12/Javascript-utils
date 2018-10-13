@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./AppDragDrop.css";
 
 class AppDrapDrop extends Component {
   constructor(props) {
@@ -14,10 +15,10 @@ class AppDrapDrop extends Component {
 
   render() {
     return (
-      <div className="container-drag">
+      <div className="drag-drop-container">
         <h2 className="header">DRAG & DROP DEMO</h2>
-        <div className="wip" />
-        <div className="droppable" />
+        <div className="wip">WIP</div>
+        <div className="droppable">COMPLETED</div>
       </div>
     );
   }
